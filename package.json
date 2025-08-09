@@ -1,0 +1,25 @@
+{
+  "name": "icewarbler.github.io",
+  "version": "1.0.0",
+  "description": "Beau's Personal Website!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Beau",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "icewarbler.github.io"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "next": "^15.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
