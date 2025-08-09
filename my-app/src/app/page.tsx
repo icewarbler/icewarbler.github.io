@@ -2,8 +2,19 @@ import Image from "next/image";
 
 function StickyHeader() {
   return (
-    <header className="sticky top-0 bg-black p-4 shadow z-50">
-      <h1>icewarbler.github.io</h1>
+    <header className="sticky text-white top-0 bg-black p-4 shadow z-50  w-full flex items-baseline justify-between">
+      <a href="/" className="text-xl font-bold">icewarbler.github.io</a>
+      <nav className="flex space-x-6 justify-end">
+        <a href="#box1" className="px-4 py-2 hover:rounded hover:bg-gray-100 transition">
+          Repos
+        </a>
+        <a href="#box2" className="px-4 py-2 hover:rounded hover:bg-gray-100 transition">
+          Videos
+        </a>
+        <a href="#box3" className="px-4 py-2 hover:rounded hover:bg-gray-100 transition">
+          Contact
+        </a>
+      </nav>
     </header>
   );
 }
@@ -12,17 +23,29 @@ export default function Home() {
   return (
     <>
     <StickyHeader />
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
+    <div className="ml-[50px] mt-[-10px] font-sans grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <main className="col-span-full flex flex-col gap-[32px] items-start sm:items-start">
+        <div className="grid grid-cols-[1fr_auto] gap-20 items-start">
+          <div className="flex flex-col gap-4 w-[500px]">
+            <h1 className="text-4xl font-bold">Hi, I'm Beau!</h1>
+            <p className="text-base leading-relaxed">
+              ...and this is my website! I'm a recent graduate from UIUC, with a degree in engineering
+              physics and a minor in computer science. My favorite programming languages are python, C++,
+              and C, and I also love messing around with SQL queries. Beyond programming, I'm really into
+              all types of art: drawing, oil painting, digital -- pretty much everything! Thanks for vising,
+              and have a nice stay :)
+            </p>
+          </div>
+          <Image
+            className="w-100 h-auto"
+            src="/beau_birthday_2022_border.png"
+            alt="Beau"
+            width={180}
+            height={180}
+            priority
+          />
+        </div>
+        {/* <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
@@ -33,9 +56,9 @@ export default function Home() {
           <li className="tracking-[-.01em]">
             Save and see your changes instantly.
           </li>
-        </ol>
+        </ol> */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        {/* <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -59,7 +82,7 @@ export default function Home() {
           >
             Read our docs
           </a>
-        </div>
+        </div> */}
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
