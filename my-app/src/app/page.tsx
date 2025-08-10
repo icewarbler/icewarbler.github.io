@@ -32,18 +32,23 @@ export default function Home() {
               ...and this is my website! I'm a recent graduate from UIUC, with a degree in engineering
               physics and a minor in computer science. My favorite programming languages are python, C++,
               and C, and I also love messing around with SQL queries. Beyond programming, I'm really into
-              all types of art: drawing, oil painting, digital -- pretty much everything! Thanks for vising,
+              all types of visual art: drawing, oil painting, digital -- pretty much everything! Thanks for vising,
               and have a nice stay :)
             </p>
           </div>
-          <Image
-            className="flex mr-[100px] w-100 h-auto"
-            src="/beau_birthday_2022_border.png"
-            alt="Beau"
-            width={180}
-            height={180}
-            priority
-          />
+          <figure className="flex w-100 h-auto flex flex-col">
+            <Image
+              className="flex mr-[100px] w-100 h-auto"
+              src="/beau_birthday_2022_border.png"
+              alt="Beau"
+              width={180}
+              height={180}
+              priority
+            />
+            <p className="ml-[180px]">
+              <i>Me!</i>
+            </p>
+          </figure>
         </div>
         {/* <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
