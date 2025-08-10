@@ -11,7 +11,7 @@ function StickyHeader() {
         <a href="#box2" className="px-4 py-2 hover:rounded hover:bg-gray-100 transition">
           Videos
         </a>
-        <a href="#box3" className="px-4 py-2 hover:rounded hover:bg-gray-100 transition">
+        <a href="/contact" className="px-4 py-2 hover:rounded hover:bg-gray-100 transition">
           Contact
         </a>
       </nav>
