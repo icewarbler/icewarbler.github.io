@@ -5,3 +5,5 @@
 [{"name":"next-dev","duration":939828,"timestamp":231352518591,"id":1,"tags":{},"startTime":1754758480447,"traceId":"548a8433a4d8b478"}]
 [{"name":"next-dev","duration":598937,"timestamp":231361575718,"id":1,"tags":{},"startTime":1754758489504,"traceId":"d017201b7f35d410"}]
 [{"name":"next-dev","duration":584499,"timestamp":231379765809,"id":1,"tags":{},"startTime":1754758505213,"traceId":"2a25b96c82b0a307"}]
+[{"name":"next-dev","duration":753596,"timestamp":2085096737,"id":1,"tags":{},"startTime":1754771285576,"traceId":"0e87c97286c4f25b"}]
+[{"name":"next-dev","duration":486966,"timestamp":2100220839,"id":1,"tags":{},"startTime":1754771300700,"traceId":"afcb44c6ed2808fe"}]

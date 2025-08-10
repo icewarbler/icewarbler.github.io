@@ -23,10 +23,10 @@ export default function Home() {
   return (
     <>
     <StickyHeader />
-    <div className="ml-[50px] mt-[-10px] font-sans grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="mt-[-10px] justify-center font-sans grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="col-span-full flex flex-col gap-[32px] items-start sm:items-start">
-        <div className="grid grid-cols-[1fr_auto] gap-20 items-start">
-          <div className="flex flex-col gap-4 w-[500px]">
+        <div className="grid grid-cols-[1fr_auto] items-center justify-center gap-20 items-start">
+          <div className="flex flex-col gap-4 w-[800px] pr-[40px]">
             <h1 className="text-4xl font-bold">Hi, I'm Beau!</h1>
             <p className="text-base leading-relaxed">
               ...and this is my website! I'm a recent graduate from UIUC, with a degree in engineering
@@ -37,7 +37,7 @@ export default function Home() {
             </p>
           </div>
           <Image
-            className="w-100 h-auto"
+            className="flex mr-[100px] w-100 h-auto"
             src="/beau_birthday_2022_border.png"
             alt="Beau"
             width={180}
