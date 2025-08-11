@@ -1,4 +1,6 @@
 import Image from "next/image";
+import StickyHeader from '../components/StickyHeader'
+import Banner from '@/components/Banner'
 
 type BoxProps = {
   children?: React.ReactNode;
@@ -13,29 +15,11 @@ function Box({ children, className = "" }: BoxProps) {
   );
 }
 
-function StickyHeader() {
-  return (
-    <header className="sticky text-white top-0 bg-black p-4 shadow z-50  w-full flex items-baseline justify-between">
-      <a href="/" className="text-xl font-bold">icewarbler.github.io</a>
-      <nav className="flex space-x-6 justify-end">
-        <a href="#box1" className="px-4 py-2 hover:rounded hover:bg-gray-100 transition">
-          Repos
-        </a>
-        <a href="#box2" className="px-4 py-2 hover:rounded hover:bg-gray-100 transition">
-          Videos
-        </a>
-        <a href="/contact" className="px-4 py-2 hover:rounded hover:bg-gray-100 transition">
-          Contact
-        </a>
-      </nav>
-    </header>
-  );
-}
-
 export default function Home() {
   return (
     <>
     <StickyHeader />
+    <Banner />
     <div className="max-w-9/10 mx-auto px-4"> 
         <div className="mt-[-10px] font-sans grid grid-rows-[1fr_20px] p-8 pb-20 gap-16 sm:p-20 h-screen w-full">
         <main className="col-span-full flex flex-col gap-[32px] h-full">
