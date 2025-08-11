@@ -1,6 +1,8 @@
 import Image from "next/image";
 import StickyHeader from '../components/StickyHeader'
 import Banner from '@/components/Banner'
+import Middle from '@/components/Middle'
+import End from '@/components/End'
 
 type BoxProps = {
   children?: React.ReactNode;
@@ -20,37 +22,12 @@ export default function Home() {
     <>
     <StickyHeader />
     <Banner />
-    <div className="max-w-9/10 mx-auto px-4"> 
+    <Middle />
+    <End />
+    {/* <div className="max-w-9/10 mx-auto px-4"> 
         <div className="mt-[-10px] font-sans grid grid-rows-[1fr_20px] p-8 pb-20 gap-16 sm:p-20 h-screen w-full">
         <main className="col-span-full flex flex-col gap-[32px] h-full">
-          <Box className="flex flex-row h-full w-full">
-          <div className="flex flex-row justify-center items-start w-full">
-          <div className="flex flex-col gap-4 w-[800px] pr-[40px] items-start text-start">
-            <h1 className="text-4xl font-bold">Hi, I'm Beau!</h1>
-            <p className="text-base leading-relaxed">
-              ...and this is my website! I'm a recent graduate from UIUC, with a degree in engineering
-              physics and a minor in computer science. My favorite programming languages are python, C++,
-              and C, and I also love messing around with SQL queries. Beyond programming, I'm really into
-              all types of visual art: drawing, oil painting, digital -- pretty much everything! Thanks for vising,
-              and have a nice stay :)
-            </p>
-          </div>
-          <figure className="flex w-100 h-auto flex flex-col">
-            <Image
-              className="flex mr-[100px] w-100 h-auto"
-              src="/beau_birthday_2022_border.png"
-              alt="Beau"
-              width={180}
-              height={180}
-              priority
-            />
-            <p className="ml-[180px]">
-              <i>Me!</i>
-            </p>
-          </figure>
-          </div>
-          </Box>
-      </main>
+        </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -99,7 +76,7 @@ export default function Home() {
         </a>
       </footer>
     </div>
-    </div>
+    </div> */}
     </>
   );
 }
