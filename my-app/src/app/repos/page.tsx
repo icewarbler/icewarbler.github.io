@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import StickyHeader from '@/components/StickyHeader'
 import { useEffect, useState } from "react"
-import { NextResponse } from 'next/server'
 
 type Repo = {
   id: number
@@ -19,7 +18,7 @@ type BoxProps = {
 
 function Box({ children, className = "" }: BoxProps) {
   return (
-    <div className={`w-[672px] h-screen bg-gray-200 border border-gray-400 rounded-md p-4 shadow-md ${className}`}>
+    <div className={`w-[700px] h-[200px] bg-gray-200 border border-gray-400 rounded-md p-4 shadow-md ${className}`}>
       {children}
     </div>
   );
@@ -53,12 +52,30 @@ function RepoList() {
   return (
     <ul>
       {repos.map(repo => (
-        <li key={repo.id}>
-          <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-            {repo.name}
-          </a>
-          {repo.description && <p>{repo.description}</p>}
-        </li>
+        <div className="flex justify-center">
+          <Box className="flex mt-[20px] w-[1000px]">
+            <li key={repo.id}>
+              <div className="flex flex-row">
+                <figure>
+                  <Image
+                    className="flex mr-[80px] w-40 h-auto"
+                    src="/github-logo.png"
+                    alt="github"
+                    width={70}
+                    height={70}
+                    priority
+                  />
+                </figure>
+                <div className="flex flex-col">
+                <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                  {repo.name}
+                </a>
+                {repo.description && <p>{repo.description}</p>}
+                </div>
+              </div>
+            </li>
+          </Box>
+        </div>
       ))}
     </ul>
   )
