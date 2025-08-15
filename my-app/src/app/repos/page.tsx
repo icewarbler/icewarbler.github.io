@@ -67,10 +67,10 @@ function RepoList() {
                   />
                 </figure>
                 <div className="flex flex-col">
-                <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-                  {repo.name}
-                </a>
-                {repo.description && <p>{repo.description}</p>}
+                  <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    {repo.name}
+                  </a>
+                  {repo.description && <p>{repo.description}</p>}
                 </div>
               </div>
             </li>

@@ -48,7 +48,8 @@ export default function Middle() {
                     <div className="flex flex-col pl-[10px] gap-4 w-[800px] pr-[40px] items-start text-start">
                         <h1 className="text-4xl font-bold">Repos</h1>
                         <p className="text-base leading-relaxed">
-                          My github repositories that I f
+                          My github repositories for projects that I find interesting. Constantly being updated, so come
+                          back later for more!
                         </p>
                         <Link href="app/repos" className="flex col-row bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                             Go to Repos 
