@@ -51,7 +51,7 @@ export default function Middle() {
                           My github repositories for projects that I find interesting. Constantly being updated, so come
                           back later for more!
                         </p>
-                        <Link href="app/repos" className="flex col-row bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        <Link href="/repos" className="flex col-row bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                             Go to Repos 
                             <Arrow />
                         </Link>
