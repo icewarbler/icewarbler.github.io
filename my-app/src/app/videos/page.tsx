@@ -53,7 +53,7 @@ export default function videos() {
     return (
         <>
         <StickyHeader />
-        <VideoList />
+        <p>Soon to come...</p>
         </>
     )
 }
