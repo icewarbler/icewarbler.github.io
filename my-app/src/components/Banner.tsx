@@ -1,5 +1,8 @@
+'use client'
+
 import React from 'react'
 import Image from "next/image";
+
 
 type BoxProps = {
   children?: React.ReactNode;
@@ -23,17 +26,17 @@ export default function Banner() {
             <Box className="flex flex-row h-full  mx-auto px-4 w-[1000px]">
                 <div className="flex flex-row justify-center items-start w-full">
                     <div className="flex flex-col gap-4 w-[800px] pr-[40px] items-start text-start">
-                        <h1 className="text-4xl font-bold">Hi, I'm Beau!</h1>
+                        <h1 className="text-4xl font-bold">Hi, I&apos;m Beau!</h1>
                         <p className="text-base leading-relaxed mb-[10px]">
-                        I'm a recent graduate from UIUC, with a degree in engineering
+                        I&apos;m a recent graduate from UIUC, with a degree in engineering
                         physics and a minor in computer science. My favorite programming languages are python, C++,
-                        and C, and I also love messing around with SQL queries. Beyond programming, I'm really into
-                        all types of visual art: drawing, oil painting, digital -- pretty much everything! Thanks for vising,
+                        and C, and I also love messing around with SQL queries. Beyond programming, I&apos;m really into
+                        all types of visual art: drawing, oil painting, digital — pretty much everything! Thanks for vising,
                         and have a nice stay :)
                         </p>
                         <p>
-                        <i>This website is currently under construction! I have other projects I'm 
-                          working on right now, so be sure to check them out under the "repos" section!
+                        <i>This website is currently under construction! I have other projects I&apos;m 
+                          working on right now, so be sure to check them out under the &quot;repos&quot; section!
                         </i>
                         </p>
                     </div>
@@ -45,6 +48,7 @@ export default function Banner() {
                             width={150}
                             height={150}
                             priority
+                            unoptimized
                         />
                         <p className="ml-[150px]">
                             <i>Me!</i>

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from "next/image";
 import Link from 'next/link'
@@ -38,7 +40,7 @@ export default function Banner() {
                     <div className="flex flex-col gap-4 w-[800px] pr-[40px] items-start text-start">
                         <h1 className="text-4xl font-bold">Videos (coming soon!)</h1>
                         <p className="text-base leading-relaxed">
-                        My father's youtube videos — mostly ghost-hunting and cemetery exploration. 
+                        My father&apos;s youtube videos — mostly ghost-hunting and cemetery exploration. 
                         </p>
                         <Link href="/videos" className="flex col-row bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                             Go to Videos 
@@ -53,6 +55,7 @@ export default function Banner() {
                             width={150}
                             height={150}
                             priority
+                            unoptimized
                         />
                         
                     </figure>

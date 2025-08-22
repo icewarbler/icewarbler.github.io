@@ -32,16 +32,20 @@ function RepoList() {
   useEffect(() => {
     async function fetchRepos() {
       try {
-        const res = await fetch("/api/repos")
+        const res = await fetch('https://api.github.com/users/icewarbler/repos')
         if (!res.ok) throw new Error("Failed to fetch repos")
         const data: Repo[] = await res.json()
         setRepos(data)
-      } catch (err: any) {
-        setError(err.message)
+      } catch (err: unknown) {
+        if (err instanceof Error) {
+          setError(err.message)
+        } else {
+          setError("An unknown error occurred")
+        }
       } finally {
         setLoading(false)
       }
-    }
+      }
     fetchRepos()
   }, [])
 
@@ -52,9 +56,9 @@ function RepoList() {
   return (
     <ul>
       {repos.map(repo => (
-        <div className="flex justify-center">
+        <div key={repo.id} className="flex justify-center">
           <Box className="flex mt-[20px] w-[1000px]">
-            <li key={repo.id}>
+            <li>
               <div className="flex flex-row">
                 <figure>
                   <Image
@@ -64,6 +68,7 @@ function RepoList() {
                     width={70}
                     height={70}
                     priority
+                    unoptimized
                   />
                 </figure>
                 <div className="flex flex-col">

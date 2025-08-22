@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from "next/image";
 import Link from 'next/link'
@@ -43,6 +45,7 @@ export default function Middle() {
                             width={150}
                             height={150}
                             priority
+                            unoptimized
                         />
                     </figure>
                     <div className="flex flex-col pl-[10px] gap-4 w-[800px] pr-[40px] items-start text-start">
