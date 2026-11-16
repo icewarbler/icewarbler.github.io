@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "icewarbler.github.io",
+  "version": "1.0.0",
+  "description": "Beau's Personal Website!",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
